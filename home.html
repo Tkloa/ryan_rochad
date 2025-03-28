@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+
+	<style type="text/css">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation ul li {
+    margin-right: 20px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-icon {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 主标题部分样式 */
+.main-heading {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.main-heading h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.main-heading p.subheading {
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* 目的地展示部分样式 */
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+    justify-items: center;
+}
+
+.destination-item {
+    text-align: center;
+}
+
+.destination-item img {
+    margin-bottom: 10px;
+}
+
+/* 订阅部分样式 */
+.subscribe-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ccc;
+}
+
+.subscribe-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.subscribe-section p.subscribe-text {
+    margin-bottom: 30px;
+}
+
+.subscribe-section form input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+/* 页脚部分样式 */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+}
+
+.footer-left {
+    margin-bottom: 20px;
+}
+
+.footer-left p.footer-text {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-middle,
+.footer-right {
+    margin-bottom: 20px;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.footer-middle ul li a,
+.footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+	</style>
+</head>
+
+<body>
+	 <header class="header">
+        <div class="logo">
+        <img src="2/7f8289149e7afb9080de1d886d05e02.png" width="120" alt=""/> </div>
+        <nav class="navigation">
+            <ul>
+                <li>Home</li>
+                <li><a href="zhuye.html">About us</a></li>
+                <li>Services</li>
+                <li>Contact</li>
+		      <li><a href="dl.html">login</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="btn">Learn more</button>
+            <i class="fas fa-search"></i> <!-- 需引入Font Awesome字体图标库 -->
+        </div>
+    </header>
+
+    <!-- 主标题部分 -->
+    <section class="main-heading">
+        <h1>Collection Introduction</h1>
+        <p class="subheading">Introduction</p >
+    </section>
+
+    <!-- 目的地展示部分 -->
+    <section class="destination-grid">
+        <div class="destination-item">
+            < img src="destination1.png" alt="Destination 1" width="200" height="200"> <!-- 假设图片尺寸为200x200px，需替换实际图片 -->
+            <h3>Destination Name 1</h3>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="destination-item">
+            < img src="destination2.png" alt="Destination 2" width="200" height="200">
+            <h3>Destination Name 2</h3>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="destination-item">
+            < img src="destination3.png" alt="Destination 3" width="200" height="200">
+            <h3>Destination Name 3</h3>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="destination-item">
+            < img src="destination4.png" alt="Destination 4" width="200" height="200">
+            <h3>Destination Name 4</h3>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="destination-item">
+            < img src="destination5.png" alt="Destination 5" width="200" height="200">
+            <h3>Destination Name 5</h3>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="destination-item">
+            < img src="destination6.png" alt="Destination 6" width="200" height="200">
+            <h3>Destination Name 6</h3>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="destination-item">
+            < img src="destination7.png" alt="Destination 7" width="200" height="200">
+            <h3>Destination Name 7</h3>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="destination-item">
+            < img src="destination8.png" alt="Destination 8" width="200" height="200">
+            <h3>Destination Name 8</h3>
+            <button class="btn">Explore</button>
+        </div>
+    </section>
+
+    <!-- 订阅部分 -->
+    <section class="subscribe-section">
+        <h2>SLeave your contact information</h2>
+        <p class="subscribe-text">Sed autem eiusmod tempor incididunt ut labore et dolore magna aliqua.</p >
+        <form action="#">
+            <input type="email" placeholder="Enter your email here" required>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- 页脚部分 -->
+    <footer class="footer">
+        <div class="footer-left">
+           <img src="2/7f8289149e7afb9080de1d886d05e02.png" width="120" alt=""/>
+<p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p >
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+      </div>
+        <div class="footer-middle">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Home</li>
+                <li>Your Planet</li>
+                <li>Circulator</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h3>Our Partners</h3>
+            <ul>
+                <li>Robert Johnson</li>
+                <li>Emily Brown</li>
+                <li>Robert Johnson</li>
+                <li>Emily Brown</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Ryan Rochadd. All rights reserved.</p >
+            <p>Powered by Ryan Rochard</p >
+        </div>
+    </footer>
+
+</body>
+</html>
