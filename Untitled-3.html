@@ -1,176 +1,160 @@
 <!doctype html>
-<html>
+<html><head>
+<meta charset="utf-8">
+<title>瑞恩罗恰德</title>
+	<style type="text/css">
+	nav {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #ff69b4;
+	.banner {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex - direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.banner h1 {
+  font-size: 36px;
+}
+.banner p {
+  font-size: 18px;
+}
+	.antique - gallery {
+  display: flex;
+  flex - wrap: wrap;
+  justify-content: space - around;
+  padding: 20px;
+}
+.antique - item {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+.antique - item img {
+  width: 100%;
+  height: auto;
+}
+.antique - item img:hover {
+  transform: scale(1.1);
+	transition: transform 0.3s ease - in - out;
+	}
+	footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
 
-<head>
-  <meta charset="utf-8">
-  <title>瑞恩罗恰德</title>
-  <style type="text/css">
-    nav {
-      background-color: #000;
-      color: #fff;
-      padding: 10px;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: space-around;
-    }
+h1, h2 {
+    text-align: center;
+}
 
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
+/* 公司简介部分样式 */
+#company-profile {
+    padding: 50px;
+}
 
-    nav ul li a:hover {
-      color: #ff69b4;
-    }
+.company-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
 
-    .banner {
-      background-image: url('banner.jpg');
-      background-size: cover;
-      height: 400px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-    }
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
 
-    .banner h1 {
-      font-size: 36px;
-    }
+.stat-item {
+    text-align: center;
+}
 
-    .banner p {
-      font-size: 18px;
-    }
+.stat-number {
+    font-size: 36px;
+    display: block;
+}
 
-    .antique-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space - around;
-      padding: 20px;
-    }
+/* 投资领域部分样式 */
+#investment-field {
+    padding: 50px;
+}
 
-    .antique-item {
-      width: 300px;
-      margin: 10px;
-      text-align: center;
-    }
+.investment-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-    .antique-item img {
-      width: 100%;
-      height: auto;
-    }
+.investment-item {
+    width: 220px;
+    text-align: center;
+    margin-top: 30px;
+}
 
-    .antique-item img:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s ease - in - out;
-    }
-
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1,
-    h2 {
-      text-align: center;
-    }
-
-    /* 公司简介部分样式 */
-    #company-profile {
-      padding: 50px;
-    }
-
-    .company-img {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-    }
-
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 30px;
-    }
-
-    .stat-item {
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 36px;
-      display: block;
-    }
-
-    /* 投资领域部分样式 */
-    #investment-field {
-      padding: 50px;
-    }
-
-    .investment-items {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .investment-item {
-      width: 220px;
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .investment-img {
-      max-width: 100%;
-    }
+.investment-img {
+    max-width: 100%;
+}
 
 
-    #news-and-info {
-      padding: 50px;
-    }
+#news-and-info {
+    padding: 50px;
+}
 
-    .more-link {
-      float: right;
-      text-decoration: none;
-      color: #333;
-    }
+.more-link {
+    float: right;
+    text-decoration: none;
+    color: #333;
+}
 
-    .news-item {
-      margin-top: 10px;
-    }
-  </style>
+.news-item {
+    margin-top: 10px;
+}
+	</style>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li>首页</li>
-      <li>古董展示</li>
-      <li>鉴定服务</li>
-      <li>文化资讯</li>
-      <li><a href="dl.html">联系我们</a></li>
-    </ul>
-  </nav>
-  <div class="banner">
-    <img src="images/未标题-1_画板 1.jpg" width="1683" height="563" alt="横幅图片" />
-    <h1 align="center">————瑞恩罗恰德拍卖行————</h1>
-    <p align="center"> 热诚专业、卓越服务、英明判断、诚信可靠、团队合作及创新精神，均为罗恰德团队恪守的核心价值及原则。</p>
-    <p align="center">若你也拥有上述质，欢迎申请个别职位或阐述有兴趣的范畴，成为罗恰德的一份子。
-    </p>
-  </div>
-
-
+<nav>
+  <ul>
+    <li>首页</li>
+    <li>古董展示</li>
+    <li>鉴定服务</li>
+    <li>文化资讯</li>
+    <li><a href="dl.html">联系我们</a></li>
+  </ul>
+</nav>
+	<div class="banner">
+<img src="images/未标题-1_画板 1.jpg" width="1683" height="563" alt="横幅图片"/>
+<h1 align="center">————瑞恩罗恰德拍卖行————</h1>
+  <p align="center"> 热诚专业、卓越服务、英明判断、诚信可靠、团队合作及创新精神，均为罗恰德团队恪守的核心价值及原则。</p >
+		<p align="center">若你也拥有上述质，欢迎申请个别职位或阐述有兴趣的范畴，成为罗恰德的一份子。
+</p >
+</div>
+	
+    
 </body>
-
 </html>
